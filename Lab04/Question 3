@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, sum = 0;
+
+            Console.Write("Enter a Number : ");
+
+            num = int.Parse(Console.ReadLine());
+
+            for (int i = num; i > 0; i = i / 10)
+            {
+                sum = sum + (i % 10);
+            }
+            Console.WriteLine("Sum of Digits of the Number : " + sum);
+            
+            Console.ReadKey();
+        }
+    }
+}
