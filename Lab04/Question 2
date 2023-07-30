@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = "Hello World";
+            int vowelCount = 0;
+
+            foreach (char c in input)
+            {
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+                    c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+                {
+                    vowelCount++;
+                }
+            }
+            Console.WriteLine("Number of vowels: " + vowelCount);
+
+            Console.ReadKey();
+        }
+    }
+}
