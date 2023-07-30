@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ConvertValues cv = new ConvertValues();
+            cv.kilometerTOmeter();
+
+            Console.ReadKey();
+        }
+    }
+    internal class ConvertValues
+    {
+        public void kilometerTOmeter()
+        {
+            Console.Write("Enter the value in kilometers:");
+            double km = Convert.ToDouble(Console.ReadLine());
+            double m = km * 1000;
+            Console.WriteLine($"{km} kilometers is equal to {m} meters.");
+        }
+    }
+}
