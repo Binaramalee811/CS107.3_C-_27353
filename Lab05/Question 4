@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.Write("What is the radius of your circle: ");
+            double radius = double.Parse(Console.ReadLine());
+
+            double pi = Math.PI;
+            double area = pi * radius * radius;
+            double circumference = 2 * pi * radius;
+
+            Console.WriteLine("The area of your circle is: " + area);
+            Console.WriteLine("The circumference of your circle is: " + circumference);
+
+            Console.ReadKey();
+        }
+    }
+}
